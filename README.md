@@ -27,16 +27,6 @@ npm run dev
 
 Then open your browser to http://localhost:5173
 
-## 📁 Project Structure
-.
-├── img-comparator/
-│   └── ReactCompareImage.tsx  # Main component
-├── uploader/
-│   └── ImageUploader.tsx      # Optional uploader (WIP)
-├── App.tsx
-├── main.tsx
-└── index.css / img-compare.css
-
 ## 🛠️ Tech Stack
 - React 18
 - TypeScript
@@ -45,9 +35,6 @@ Then open your browser to http://localhost:5173
 
 ## 📸 Sample Images
 This project includes two test images (before.jpg and after.jpg) for demonstration purposes. Replace them with your own!
-
-## 📄 License
-MIT
 
 --- 
 
@@ -80,21 +67,8 @@ npm run dev
 
 Puis ouvrez votre navigateur à l’adresse http://localhost:5173
 
-## 📁 Structure du projet
-.
-├── img-comparator/
-│   └── ReactCompareImage.tsx  # Composant principal
-├── uploader/
-│   └── ImageUploader.tsx      # Uploader optionnel (en cours)
-├── App.tsx
-├── main.tsx
-└── index.css / img-compare.css
-
 ## 🛠️ Stack Technique
 - React 18
 - TypeScript
 - Vite
 - CSS Modules
-
-## 📄 Licence
-MIT
