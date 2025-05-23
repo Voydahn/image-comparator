@@ -1,0 +1,162 @@
+.image-compare {
+    background-color: #333;
+    margin: 0;
+    overflow: hidden;
+    position: relative;
+}
+
+@media (prefers-color-scheme: light) {
+    .image-compare {
+        background-color: whitesmoke;
+    }
+}
+
+.after-name, .before-name {
+    background-color: white;
+    bottom: 0;
+    font-size: 1rem;
+    overflow: hidden;
+    padding: 0.5rem 1rem;
+    pointer-events: none;
+    position: absolute;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.after-name .size, .before-name .size {
+    color: gray;
+    font-family: monospace;
+    font-size: 1.2rem;
+    margin-top: 2px;
+}
+
+.after-name {
+    border-top-right-radius: 0.75rem;
+    left: 0;
+    z-index: 5;
+}
+
+.before-name {
+    border-top-left-radius: 0.75rem;
+    right: 0;
+}
+
+.before-name .size {
+    text-align: right;
+}
+
+.drop-zone {
+    align-items: center;
+    /*background-color: rgba(0, 0, 0, 0.5);*/
+    color: white;
+    display: flex;
+    font-size: 50px;
+    height: 100%;
+    justify-content: center;
+    left: 0;
+    opacity: 0;
+    pointer-events: none;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 10;
+}
+
+.drop-zone.visible {
+    opacity: 1;
+    pointer-events: all;
+}
+
+.image-compare.full {
+    flex: 1;
+    height: 100%;
+    overflow: hidden;
+    width: 100%;
+}
+
+/*.image-compare.full {*/
+/*    height: 100vh; !* Fullscreen height *!*/
+/*    width: 100vw; !* Fullscreen width *!*/
+/*    overflow: hidden; !* To ensure no scrollbars *!*/
+/*    position: relative; !* Make sure it stays within bounds *!*/
+/*}*/
+
+.image-compare.full img {
+    height: 100%;
+    left: 0;
+    object-fit: contain;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
+.wrapper, .handle {
+    bottom: 0;
+    position: absolute;
+    top: 0;
+}
+
+.wrapper {
+    left: 0;
+    overflow: hidden;
+    transform: translateZ(0);
+    width: 100%;
+    will-change: width;
+    z-index: 1;
+    /*background-color: #333333;*/
+}
+
+.handle {
+    background-color: currentColor;
+    color: #fff;
+    cursor: ew-resize;
+    transform: translateX(-50%) translateZ(0);
+    width: 2px;
+    will-change: left;
+    z-index: 2;
+}
+
+.handle-icon {
+    color: currentColor;
+    font-size: 2rem;
+    left: 50%;
+    line-height: normal;
+    position: absolute;
+    top: 50%;
+}
+
+.handle-icon.left {
+    padding-right: 10px;
+    transform: translate(-100%, -50%);
+}
+
+.handle-icon.right {
+    padding-left: 10px;
+    transform: translate(0, -50%);
+}
+
+.reset-button {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 10px 20px;
+    background-color: #ffffff;
+    color: #000000;
+    border-top-right-radius: 0.75rem;
+    border-top-left-radius: 0.75rem;
+    cursor: pointer;
+    font-size: 16px;
+    z-index: 100;
+}
+
+.reset-button:hover {
+    background-color: #e3e3e3;
+}
+
+.container-compare {
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 80rem; /* équivalent à max-w-7xl dans Tailwind CSS */
+}
