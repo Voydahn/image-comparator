@@ -23,6 +23,7 @@ npm install
 
 # Run the app
 npm run dev
+```
 
 Then open your browser to http://localhost:5173
 
@@ -75,6 +76,7 @@ npm install
 
 # Lancer l'application
 npm run dev
+```
 
 Puis ouvrez votre navigateur à l’adresse http://localhost:5173
 
