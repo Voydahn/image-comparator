@@ -1,5 +1,10 @@
 # 🖼️ Image Comparator
 
+This is an unfinished application. It is provided **as-is**, primarily intended for portfolio demonstration purposes.
+
+## ⚠️ Disclaimer
+This project is currently a work in progress and is shared in its current state. It may not yet be production-ready.
+
 An interactive image comparison tool built with **React** and **Vite**.  
 Easily compare two images using a draggable slider, with optional zoom and drag features.
 
@@ -33,12 +38,18 @@ Then open your browser to http://localhost:5173
 - Vite
 - CSS Modules
 
-## 📸 Sample Images
-This project includes two test images (before.jpg and after.jpg) for demonstration purposes. Replace them with your own!
+## 📄 License
+
+This project is shared for learning and demonstration purposes only.
 
 --- 
 
 # 🖼️ Comparateur d'Images
+
+Il s'agit d'une application **non terminée**. Elle est livrée **telle quelle**, principalement à des fins de démonstration pour un portfolio.
+
+## ⚠️ Avertissement
+Ce projet est encore en cours de développement. Il est partagé dans son état actuel. Il peut ne pas être encore prêt pour une utilisation en production.
 
 Un outil interactif de comparaison d’images, développé avec **React** et **Vite**.  
 Comparez facilement deux images grâce à un curseur glissant, avec prise en charge du zoom, du déplacement et du glisser-déposer.
@@ -72,3 +83,7 @@ Puis ouvrez votre navigateur à l’adresse http://localhost:5173
 - TypeScript
 - Vite
 - CSS Modules
+
+## 📄 Licence
+
+Projet fourni uniquement à des fins pédagogiques et de démonstration.
